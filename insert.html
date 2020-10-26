@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Entry Page</title>
+    <style>
+        body
+        {
+            background-color: url('https://storageaccount012.blob.core.windows.net/$web/image1.jpg?sp=r&st=2020-10-26T08:07:16Z&se=2020-10-26T16:07:16Z&spr=https,http&sv=2019-12-12&sr=b&sig=v3UzpQzLJCzAUoXuIWLnZ%2FwpIC9XyoJP2Iz%2B7lcFpno%3D');
+        }
+        .header
+        {
+            /* border: 2px solid red; */
+            margin: 15px;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .body
+        {
+            /* border: 2px solid black; */
+            margin: 15px;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .footer
+        {
+            position: fixed;
+            bottom: 5px;
+            left: 42%;
+            /* border: 2px solid black; */
+            margin: 15px;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Entry Page</h1>
+    </div>
+    <div class="body">
+        <form action="insert.php" method="POST">
+            Name <input type="text" name="Name"><br><br>
+            Roll <input type="number" name="Roll"><br><br>
+            CGPA <input type="number" name="CGPA"><br><br>
+            <!-- YEAR <input type="number" name="year"><br><br> -->
+            <input type="submit"><br>
+        </form>
+    <!-- </div>
+    <div class="footer">
+        <h1>ASSIGNMENT 5</h1>
+    </div> -->
+</body>
+</html>
